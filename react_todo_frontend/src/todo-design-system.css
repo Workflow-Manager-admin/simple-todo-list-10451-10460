@@ -1,0 +1,182 @@
+:root {
+  /* Colors */
+  --color-ffffff: #ffffff;
+  --color-d6d7ef: #d6d7ef;
+  --color-9395d3: #9395d3;
+  --color-8b8787: #8b8787;
+  --color-000000: #000000;
+  --color-d1d1d6: #d1d1d6;
+  --color-ebebf5: #ebebf5;
+  --color-34c759: #34c759;
+  --color-ffd60a: #ffd60a;
+  --color-b3b7ee: #b3b7ee;
+
+  /* Styles as backgrounds or borders (assigned by style_ref) */
+  --bg-style-0: var(--color-ffffff);
+  --bg-style-1: var(--color-d6d7ef);
+  --bg-style-2: var(--color-9395d3);
+  --bg-style-6: var(--color-8b8787);
+  --bg-style-7: var(--color-000000);
+  --bg-style-8: var(--color-d1d1d6);
+  --bg-style-9: var(--color-ebebf5);
+  --bg-style-10: var(--color-34c759);
+  --bg-style-11: var(--color-ffd60a);
+  --bg-style-16: var(--color-b3b7ee);
+  --bg-style-20: var(--color-9395d3);
+  --bg-style-22: var(--color-ffffff);
+  --bg-style-23: var(--color-9395d3);
+
+  --border-style-3-color: var(--color-ffffff);
+  --border-style-4-color: var(--color-9395d3);
+  --border-style-5-color: var(--color-8b8787);
+  --border-style-15-color: var(--color-b3b7ee);
+  --border-style-17-color: var(--color-ffffff);
+  --border-style-18-color: var(--color-8b8787);
+
+  /* Border Radii */
+  --radius-1: 1px;
+  --radius-15: 15px;
+  --radius-20: 20px;
+
+  /* Typography */
+  --font-jost: 'Jost', Arial, sans-serif;
+
+  --font-typo-6: var(--font-jost);
+  --font-typo-7: var(--font-jost);
+  --font-typo-8: var(--font-jost);
+  --font-typo-9: var(--font-jost);
+  --font-typo-10: var(--font-jost);
+  --font-typo-11: var(--font-jost);
+  --font-typo-12: var(--font-jost);
+  --font-typo-13: var(--font-jost);
+
+  /* Spacing (in px, from array) */
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --space-xl: 32px;
+  --space-xxl: 64px;
+
+  /* Shadows */
+  --shadow-0: 0 4px 4px 0 rgba(0,0,0,0.24);
+
+  /* Example color usage for typography demo */
+  --font-color-typo-6: var(--color-9395d3);
+  --font-color-typo-7: var(--color-8b8787);
+  --font-color-typo-8: var(--color-ffffff);
+  --font-color-typo-9: var(--color-9395d3);
+  --font-color-typo-10: var(--color-000000);
+  --font-color-typo-11: var(--color-8b8787);
+  --font-color-typo-12: var(--color-ffffff);
+  --font-color-typo-13: var(--color-ffffff);
+}
+
+/* Typography classes generated from design system */
+.typo-6 {
+  font-family: var(--font-typo-6);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14.45px;
+  letter-spacing: 0;
+  color: var(--font-color-typo-6);
+  text-align: left;
+}
+.typo-7 {
+  font-family: var(--font-typo-7);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14.45px;
+  letter-spacing: 0;
+  color: var(--font-color-typo-7);
+  text-align: left;
+}
+.typo-8 {
+  font-family: var(--font-typo-8);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34.68px;
+  letter-spacing: 0;
+  color: var(--font-color-typo-8);
+  text-align: left;
+}
+.typo-9 {
+  font-family: var(--font-typo-9);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18.78px;
+  letter-spacing: 0;
+  color: var(--font-color-typo-9);
+  text-align: left;
+}
+.typo-10 {
+  font-family: var(--font-typo-10);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14.45px;
+  letter-spacing: 0;
+  color: var(--font-color-typo-10);
+  text-align: left;
+}
+.typo-11 {
+  font-family: var(--font-typo-11);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.12px;
+  letter-spacing: 0;
+  color: var(--font-color-typo-11);
+  text-align: left;
+}
+.typo-12 {
+  font-family: var(--font-typo-12);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28.90px;
+  letter-spacing: 0;
+  color: var(--font-color-typo-12);
+  text-align: left;
+}
+.typo-13 {
+  font-family: var(--font-typo-13);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21.68px;
+  letter-spacing: 0;
+  color: var(--font-color-typo-13);
+  text-align: left;
+}
+
+/* Common utility classes */
+.shadow-0 {
+  box-shadow: var(--shadow-0);
+}
+
+.rounded-15 {
+  border-radius: var(--radius-15);
+}
+.rounded-20 {
+  border-radius: var(--radius-20);
+}
+.rounded-1 {
+  border-radius: var(--radius-1);
+}
+.bg-style-0 { background: var(--bg-style-0); }
+.bg-style-1 { background: var(--bg-style-1); }
+.bg-style-2 { background: var(--bg-style-2); }
+.bg-style-6 { background: var(--bg-style-6); }
+.bg-style-7 { background: var(--bg-style-7); }
+.bg-style-8 { background: var(--bg-style-8); }
+.bg-style-9 { background: var(--bg-style-9); }
+.bg-style-10 { background: var(--bg-style-10); }
+.bg-style-11 { background: var(--bg-style-11); }
+.bg-style-16 { background: var(--bg-style-16); }
+.bg-style-20 { background: var(--bg-style-20); }
+.bg-style-22 { background: var(--bg-style-22); }
+.bg-style-23 { background: var(--bg-style-23); }
+
+.border-style-3 { border: 2px solid var(--border-style-3-color); }
+.border-style-4 { border: 1.5px solid var(--border-style-4-color); }
+.border-style-5 { border: 1.5px solid var(--border-style-5-color); }
+.border-style-15 { border: 1.5px solid var(--border-style-15-color); }
+.border-style-17 { border: 3px solid var(--border-style-17-color); }
+.border-style-18 { border: 1px solid var(--border-style-18-color); }
