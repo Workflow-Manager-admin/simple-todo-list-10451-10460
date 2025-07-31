@@ -1,0 +1,182 @@
+@import "./todo-design-system.css";
+
+/* Root overrides */
+.todo-app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-style-1);
+  color: var(--font-color-typo-10);
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-style-1);
+}
+
+/* Header / App bar */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  width: 100%;
+  background: var(--bg-style-2);
+  position: relative;
+}
+.todo-appbar {
+  margin-left: 2rem;
+}
+
+.theme-toggle {
+  margin: 10px 20px;
+}
+
+/* List and items */
+.todo-list {
+  width: 100%;
+  max-width: 440px;
+  margin: 2rem auto;
+  padding: 0;
+}
+
+.todo-empty {
+  padding: var(--space-m);
+  text-align: center;
+  color: var(--color-8b8787);
+}
+
+.todo-item {
+  background: var(--bg-style-22);
+  border-radius: var(--radius-15);
+  margin-bottom: var(--space-m);
+  padding: var(--space-m);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-shadow: var(--shadow-0);
+}
+.todo-item.completed .todo-item-title {
+  text-decoration: line-through;
+  color: var(--color-d1d1d6);
+}
+.todo-item-main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-item-titles {
+  display: flex;
+  flex-direction: column;
+}
+.todo-item-title {
+  font-weight: 600;
+}
+.todo-item-detail {
+  font-size: 0.95em;
+  color: var(--color-8b8787);
+}
+
+.todo-item-actions {
+  display: flex;
+  gap: var(--space-s);
+}
+.btn-action {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: var(--space-xs);
+  margin-left: var(--space-xs);
+}
+.icon-check, .icon-trash, .icon-pencil {
+  font-size: 1.6em;
+}
+
+/* AddTodo section */
+.add-todo-form {
+  max-width: 440px;
+  margin: 0 auto var(--space-m) auto;
+  padding: var(--space-m);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  background: var(--bg-style-0);
+  border-radius: var(--radius-15);
+  box-shadow: var(--shadow-0);
+}
+.add-todo-field-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-s);
+}
+.add-todo-title,
+.add-todo-detail {
+  font-size: 1em;
+  padding: var(--space-xs) var(--space-s);
+  border: 1px solid var(--border-style-4-color);
+  border-radius: var(--radius-1);
+  margin-top: 0.1em;
+  background: var(--bg-style-22);
+  color: var(--color-000000);
+}
+.add-todo-btn {
+  margin-top: var(--space-m);
+  padding: var(--space-s) 0;
+  width: 100%;
+  border: none;
+  border-radius: var(--radius-15);
+  background: var(--bg-style-23);
+  color: var(--font-color-typo-12);
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow-0);
+  transition: background 0.2s;
+}
+.add-todo-btn:hover {
+  opacity: 0.94;
+}
+
+/* Navigation bar */
+.todo-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-style-2);
+  border-radius: var(--radius-20) var(--radius-20) 0 0;
+  box-shadow: var(--shadow-0);
+  gap: var(--space-xl);
+  padding: var(--space-s) 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 440px;
+}
+.todo-navbar-btn {
+  background: transparent;
+  border: none;
+  color: var(--font-color-typo-6);
+  font-size: 1.1em;
+  padding: var(--space-xs) var(--space-m);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border 0.2s, color 0.2s;
+}
+.todo-navbar-btn.selected {
+  border-bottom: 2px solid var(--bg-style-23);
+  color: var(--font-color-typo-9);
+}
+
+@media (max-width: 600px) {
+  .todo-list, .add-todo-form, .todo-navbar {
+    max-width: 100vw;
+    width: 98vw;
+  }
+  .app-header {
+    height: 54px;
+    font-size: 1em;
+  }
+}
